@@ -13,3 +13,12 @@ Podemos declarar a WikipediaService, y llamar con getArtist pasándole el nombre
 val wikipediaService = WikipediaInjector.getWikipediaService()<br>
 val artistName = "Nombre del artista" //Puedes llamar a lo que necesites aqui<br>
 val artistInfo = wikipediaService.getArtist(artistName)<br>
+
+ Una vez obtenida "artistInfo", podemos acceder al nombre del artista, a la descripcion, y al link de la siguiente manera: <br>
+ 
+ ## URL <br>
+ val articleUrl = artistInfo?.articleUrl <br>
+ ## Descripcion <br>
+ val description = artistInfo?.description
+ ## Nombre <br>
+ val artistName = artistInfo?.artistName <br>
