@@ -22,3 +22,6 @@ val artistInfo = wikipediaService.getArtist(artistName)<br>
  val description = artistInfo?.description
  ## Nombre <br>
  val artistName = artistInfo?.artistName <br>
+ ## Logo <br>
+ DEFAULT_IMAGE = Se encuentra en la clase de artist, se hace referencia a el con el import :
+ import ayds.winchester.artistinfo.external.DEFAULT_IMAGE
