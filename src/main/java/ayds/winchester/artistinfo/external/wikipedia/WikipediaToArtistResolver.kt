@@ -2,6 +2,7 @@ package ayds.winchester.artistinfo.external.wikipedia
 
 import ayds.winchester.artistinfo.external.WikipediaArtistInfo
 import ayds.winchester.artistinfo.external.BASE_WIKI_URL
+import ayds.winchester.artistinfo.external.DEFAULT_IMAGE
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 
@@ -24,6 +25,8 @@ class JsonToArtistResolver : WikipediaToArtistResolver {
                 WikipediaArtistInfo(
                     artistName,
                     item.getArtistInfo(),
+                    "wikipedia",
+                    DEFAULT_IMAGE,
                     BASE_WIKI_URL + item.getWikipediaUrl()
                 )
             }

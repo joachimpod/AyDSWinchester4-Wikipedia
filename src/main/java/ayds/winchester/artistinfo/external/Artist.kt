@@ -6,5 +6,7 @@ const val DEFAULT_IMAGE = "https://upload.wikimedia.org/wikipedia/commons/8/8c/W
 data class WikipediaArtistInfo (
     val artistName: String,
     val artistInfo: String,
+    val source: String,
+    val logoUrl: String,
     val wikipediaUrl: String,
 )

@@ -12,16 +12,16 @@ Podemos declarar a WikipediaService, y llamar con getArtist pasándole el nombre
    
 val wikipediaService = WikipediaInjector.getWikipediaService()<br>
 val artistName = "Nombre del artista" //Puedes llamar a lo que necesites aqui<br>
-val artistInfo = wikipediaService.getArtist(artistName)<br>
+val WikipediaArtistInfo = wikipediaService.getArtist(artistName)<br>
 
- Una vez obtenida "artistInfo", podemos acceder al nombre del artista, a la descripcion, y al link de la siguiente manera: <br>
+ Una vez obtenida "WikipediaArtistInfo", podemos acceder al nombre del artista, a la descripcion, al logo y al link de la siguiente manera: <br>
  
  ## URL <br>
- val articleUrl = artistInfo?.articleUrl <br>
+ val articleUrl = WikipediaArtistInfo.wikipediaUrl <br>
  ## Descripcion <br>
- val description = artistInfo?.description
+ val description = WikipediaArtistInfo.artistInfo
  ## Nombre <br>
- val artistName = artistInfo?.artistName <br>
+ val artistName = WikipediaArtistInfo.artistName <br>
  ## Logo <br>
- DEFAULT_IMAGE = Se encuentra en la clase de artist, se hace referencia a el con el import :
- import ayds.winchester.artistinfo.external.DEFAULT_IMAGE
+ val wikipedialogo = WikipediaArtistInfo.logoUrl
+
